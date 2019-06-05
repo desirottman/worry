@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>worry worry worry</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <main>
+	
+	<section id="front">
+		<div class="content">
+			<h1>worry worry worry</h1>
+			<p>This Worry Tree app is based on a mindfulness technique originally developed by Butler and Hope in their <a href="https://amzn.to/2PRpK0W" target="_blank">Managing Your Mind book</a>. </p>
+
+			<p>The purpose is to help you identify, address, and act on worries or concerns.</p>
+			
+			<p>If you are currently feeling suicidal, please reach out to a friend or resource. The <a href="https://suicidepreventionlifeline.org/">National Suicide Prevention Hotline</a> can help.</p>  
+ 
+			<button onclick="toggleContent()" class="showButton">To get started, click here.</button>
+		</div>
+	</section>
+
+	<section id="identify" class="content hide">
+		<div class="content">
+			<h1>What am I worrying about?</h1>
+			<p>Is it a hypothetical situation, or a current problem? Can I do something about this?
+			</p>
+		</div>
+		<div class="question-container visibility -is-hidden">
+			<button onclick="answerYes()" class="showButton">Yes, I can do something</button>
+			<button onclick="answerNo()" class="showButton">No, it's hypothetical</button>
+		</div>
+	</section>
+
+	<section id="action" class="content hide">
+		<div class="content">
+			<h1>Make an action plan</h1>
+			<p>What can you do? How can you do it? When can you do it?</p>
+		</div>
+		<button onclick="answerNow()" class="showButton">I can do something now</button>
+		<button onclick="later()" class="showButton">I'll schedule it for later</button>
+		</div>
+	</section>
+
+	<section id="now" class="content hide">
+		<div class="content">
+			<h1>Get up and do it...</h1> 
+			<p>Then come back and check in.</p>
+		</div>
+		<button onclick="done()" class="showButton">It's done</button>
+		</div>
+	</section> 
+
+	<section id="later" class="content hide">
+		<div class="content">
+			<h1>Let the worry go...</h1>
+
+			<button onclick="shift()" class="showButton">Let it go</button>
+		</div>
+	</section>
+
+	<section id="shift" class="content hide">
+		<div class="content">
+			<h1>Let the worry go....</h1>
+			<p> Shift your focus...</p>
+
+			<button onclick="resources()" class="showButton">Need help shifting your focus? Click here for some resources.</button>
+		</div>
+	</section>
+
+	<section id="resources" class="content hide">
+
+		<div class="content">
+			
+			<h2>Need some ideas on what to do?</h2>
+			<p>These are some great resources to help you get out of the thought loop, redirect your energy, or find help.</p>
+			<ul>
+			<li><a href="https://www.crisistextline.org/anxiety">Crisis Text Line</a></li>
+			<li><a href="https://amzn.to/2PRpK0W"><i>Managing Your Mind</i>, Baker & Hope</a></li>
+			<li><a href="https://www.getselfhelp.co.uk/worrytree.htm" target="_blank">Printable Worry Tree</a></li>
+			<li><a href="https://maps.anxietycanada.com/">Anxiety Canada Anxiety Plan</a></li>
+			<li><a href="https://www.nami.org/find-support/nami-helpline/top-25-helpline-resources">NAMI Helpline Resources</a></li>
+			<li><a href="https://twloha.com/">To Write Love On Her Arms</a></li>
+			<li><a href="https://www.wikihow.com/Change-Your-Focus">How to Change Your Focus</a></li>
+			<li><a href="https://www.tenpercent.com/">Ten Percent Happier</a></li>
+			<li><a href="https://www.reddit.com/r/aww/">r/aww</a></li>
+			</ul>
+
+
+			<p>Built by <a href="https://twitter.com/desilove">Desi💞</a></p>
+	</section>
+		
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

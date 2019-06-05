@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700|Poppins:400,500|Roboto:400,700');
+
+:root {
+    --light: #ffffff;
+    --dark: #000000;
+    --grey: #B7B7B7;
+    --accent: darkblue;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--light);
+}
+
+
+* {
+	top: 0;
+	left: 0;
+}
+
+body {
+	font-family: 'Work Sans';
+	padding: 200px;
+}
+
+h1 {
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 700;
+}
+  
+p, li {
+	font-family: 'Work Sans';
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+a {
+	  text-decoration: none;
+	  color: var(--accent);
+}
+
+a:hover {
+	  font-weight: 700;
+}
+  
+button {
+	  width: 95%;
+    margin-bottom: 20px;
+    border: 2px solid var(--dark);
+		border-radius: 5px;
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: 8px 8px var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    justify-self: center;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.15);
+		font-style: italic;
+}
+
+button:active {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.hide {
+    display: none; 
+}
+
+/*     .fade-out {
+	transition: all 2s;
+	opacity: 0;
+  }
+  
+  .fade-in {
+	transition: all 2s;
+	opacity: 1;
+  } */
+/* 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+		transition-duration: 2s;
+  }
+} */
+
+/* https://cssreference.io/property/animation-name/ */
+
+
+@media (max-width: 600px) {
+	body {
+	padding: 100px;
+  }
+}
